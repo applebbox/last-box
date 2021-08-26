@@ -18,12 +18,6 @@ ul li {
     list-style-type: none;
 }
 
-.container {
-    display: inline-block;
-    width: 1280px;
-    margin: 0 auto;
-}
-
 header {
     width: 100%;
     height: 100px;
@@ -84,6 +78,14 @@ header .login a:hover {
     border-bottom: black solid 1px;
 }
 
+.swiper-pagination {
+    display: none;
+}
+
+.swiper-swiper-scrollbar {
+    display: none;
+}
+
 /*로그인탭*/
 div.login {
     background: #ccc;
@@ -120,16 +122,13 @@ div.login > div.zone a {
 
 section#first_content {
     width: 100%;
-    background-image: url(images/mainbg.jpg);
-    background-size: cover;
-    background-attachment: fixed;
     position: relative;
     margin: 0 auto;
 }
 
 section#first_content .zone_1 {
-    width: 1280px;
-    height: 611px;
+    width: 100%;
+    height: 661px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -139,29 +138,33 @@ section#first_content .zone_1 {
     top: 510px;
 }
 
+.swiper_slide {
+    width: 100%;
+}
+
 .main_txt {
     position: absolute;
     font-size: 50px;
     font-weight: bold;
-    left: -35px;
-    bottom: 370px;
+    left: 250px;
+    bottom: 34vmax;
     text-align: left;
     color: white;
 }
 
 .sub_txt {
     position: absolute;
-    bottom: 250px;
-    left: -30px;
+    bottom: 28vmax;
+    left: 260px;
     font-size: 20px;
     text-align: left;
 }
 
 .link_st {
     position: absolute;
-    bottom: 180px;
+    bottom: 25vmax;
     font-size: 16px;
-    left: 30px;
+    left: 260px;
     padding: 8px 32px 8px 32px;
     color: white;
     border: 1px solid white;
@@ -544,3 +547,7 @@ footer p {
 .far_away {
     margin-bottom: 15px;
 } /*# sourceMappingURL=style1.css.map */
+
+.swiper-slide img {
+    width: 100%;
+}
